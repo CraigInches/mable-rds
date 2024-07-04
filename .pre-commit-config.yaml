@@ -1,1 +1,9 @@
-/home/craig/conf_sync/pre-commit/terraform/pre-commit-config.yaml
+---
+repos:
+  - repo: https://github.com/antonbabenko/pre-commit-terraform
+    rev: "v1.74.1"
+    hooks:
+      - id: terraform_fmt
+      - id: terraform_tflint
+      #- id: terraform_validate
+      - id: terraform_tfsec
